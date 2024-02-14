@@ -6,12 +6,12 @@
 <p>1. Скачайте репозиторий
 <p>2. Заполните файл .env
 <p>3. Из корня проекта создайте виртуальное окружение и включите его
-<p>`python3 -m venv venv`
-<p>`source/venv/bin/activate`
+<p>`python3 -m venv venv` <p>
+<p>`source/venv/bin/activate` <p>
 <p>4. Из корня проекта запустите команду для установки зависимостей
-<p>`pip install -r requirements.txt`
+<p>`pip install -r requirements.txt` <p>
 <p>5. Перейдите в директорию project и запустите команду для стартовой миграции в базу
-<p>`project/alembic upgrade head`
+<p>`project/alembic upgrade head` <p>
 <p>6. Запустите файл main.py или введите команду в терминале:
 <p>`uvicorn main:app`
 
