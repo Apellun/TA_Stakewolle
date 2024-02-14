@@ -20,19 +20,19 @@
 
 ### /auth/
 Стандартные эндпоинты fastapi-users
-<b>register<b> POST — Зарегистрироваться: обязательные поля username, email, password.
-<b>jwt/login<b> POST — Получить токен: нужно передать form-data с username (тут нужно ввести email) и password юзера.
-<b>jwt/logout<b> POST - Логаут для аутентифицированного юзера.
+<b>register</b> POST — Зарегистрироваться: обязательные поля username, email, password.
+<b>jwt/login</b> POST — Получить токен: нужно передать form-data с username (тут нужно ввести email) и password юзера.
+<b>jwt/logout</b> POST - Логаут для аутентифицированного юзера.
 
 ### /codes/
 Доступны для аутентифицированных пользователей
-<b>get_by_email<b> GET — получить реферальный код на электронную почту.
-<b>create_code<b> POST — создать реферальный код.
-<b>delete_code<b> DELETE — удалить реферальный код.
+<b>get_by_email</b> GET — получить реферальный код на электронную почту.
+<b>create_code</b> POST — создать реферальный код.
+<b>delete_code</b> DELETE — удалить реферальный код.
 
 ### /users/
-<b>referrals/{user_id}<b> GET — получить список рефералов по id реферера.
-<b>register/{code_str}<b> POST — зарегистрироваться по коду в качестве реферала.
+<b>referrals/{user_id}</b> GET — получить список рефералов по id реферера.
+<b>register/{code_str}</b> POST — зарегистрироваться по коду в качестве реферала.
 
 ## Как тестировать:
 
