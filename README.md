@@ -1,6 +1,6 @@
 # Stakewolle API
 
-<p>Технологии: Fast API, SQLAlchemy, Alembic, Postgres(asyncpg), Celery
+<p>Технологии: Fast API, SQLAlchemy, Alembic, Postgres(asyncpg), Celery, Redis
 
 ## Как запустить:
 1. Скачайте репозиторий

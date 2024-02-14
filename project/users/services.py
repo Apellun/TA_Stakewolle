@@ -9,12 +9,12 @@ from codes.utils import check_code_expired
 from core.exceptions import CodeExpiredException, UserDoesntExistException
 
 
-async def register_with_code(code_str: str, new_user_data: UserCreate , db: AsyncSession, user_manager):
+async def register_with_code(code_str: str, new_user_data: UserCreate, db: AsyncSession, user_manager):
     code = await get_code_by_code_str(code_str, db)
     if check_code_expired(code):
         raise CodeExpiredException
     new_user_data.referrer_id = code.user_id
-    new_refferal = await user_manager.create(new_user_data)
+    new_refferal = await user_manager.create(new_user_data, is_referral=True)
     return new_refferal
 
 
