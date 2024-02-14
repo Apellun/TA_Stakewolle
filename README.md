@@ -20,9 +20,9 @@
 
 ### /auth/
 Стандартные эндпоинты fastapi-users <p>
-<b>register</b> POST — Зарегистрироваться: обязательные поля username, email, password. <p>
-<b>jwt/login</b> POST — Получить токен: нужно передать form-data с username (тут нужно ввести email) и password пользователя. <p>
-<b>jwt/logout</b> POST - Логаут для аутентифицированного пользователя. <p>
+<b>register</b> POST — зарегистрироваться: обязательные поля username, email, password. <p>
+<b>jwt/login</b> POST — получить токен: нужно передать form-data с username (тут нужно ввести email) и password пользователя. <p>
+<b>jwt/logout</b> POST - логаут для аутентифицированного пользователя. <p>
 
 ### /codes/
 Доступны для аутентифицированных пользователей <p> 
