@@ -3,17 +3,17 @@
 <p>Технологии: Fast API, aiosqlite, SQLAlchemy, Alembic, fastapi-users, fastapi-mail
 
 ## Как запустить:
-<p>1. Скачайте репозиторий
-<p>2. Заполните файл .env
-<p>3. Из корня проекта создайте виртуальное окружение и активируйте его <br>
-    python3 -m venv venv <br>
-    source/venv/bin/activate
-<p>4. Из корня проекта запустите команду для установки зависимостей <br>
-    pip install -r requirements.txt
-<p>5. Перейдите в директорию project и запустите команду для стартовой миграции в базу <br>
-    project/alembic upgrade head
-<p>6. Запустите файл main.py или введите команду в терминале: <br>
-    uvicorn main:app
+1. Скачайте репозиторий
+2. Заполните файл .env
+3. Из корня проекта создайте виртуальное окружение и активируйте его <br>
+    `python3 -m venv venv` <br>
+    `source/venv/bin/activate`
+4. Из корня проекта запустите команду для установки зависимостей <br>
+    `pip install -r requirements.txt`
+5. Перейдите в директорию project и запустите команду для стартовой миграции в базу <br>
+   `project/alembic upgrade head`
+6. Запустите файл main.py или введите команду в терминале: <br>
+    `uvicorn main:app`
 
 ## Эндпоинты
 ### Автодокументация API доступна по адресу /docs
