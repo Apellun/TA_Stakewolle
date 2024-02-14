@@ -12,7 +12,9 @@
     `pip install -r requirements.txt`
 5. Перейдите в директорию project и запустите команду для стартовой миграции в базу
    `project/alembic upgrade head`
-6. Запустите файл main.py или введите команду в терминале:
+6. Запустите Celery
+    `celery -A core.celery:mailing worker`
+7. Запустите файл main.py или введите команду в терминале:
     `uvicorn main:app`
 
 ## Эндпоинты

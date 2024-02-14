@@ -15,7 +15,7 @@ from config import (DB_HOST_TEST, DB_NAME_TEST,
                     DB_USER_TEST)
 from main import app
 
-# DATABASE
+
 DATABASE_URL_TEST = f"postgresql+asyncpg://{DB_USER_TEST}:{DB_PASS_TEST}@{DB_HOST_TEST}:{DB_PORT_TEST}/{DB_NAME_TEST}"
 
 engine_test = create_async_engine(DATABASE_URL_TEST, poolclass=NullPool)
@@ -40,10 +40,8 @@ async def prepare_database():
         await conn.run_sync(metadata.drop_all)
 
 
-# SETUP
 @pytest.fixture(scope='session')
 def event_loop(request):
-    """Create an instance of the default event loop for each test case."""
     loop = asyncio.get_event_loop_policy().new_event_loop()
     yield loop
     loop.close()
